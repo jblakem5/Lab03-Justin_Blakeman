@@ -14,8 +14,9 @@ Lab03-Justin_Blakeman
 	the lowest natural number value of n that causes an overflow is n = 170 using doubles to store the result
 
 6. It stands to reason that any number n * 1/n   (by the properties of simple algebra) would equal n/n which is equivalent to 1.
-	--> For floats the answer is 1. Again any number times its reciprocal is 1 (except 0)
-	--> For doubles the answer again is 1. Any number times its reciprocal is 1 (except 0)
+	--> For floats the answer is not exact for high values of n due to float point approximation error. For example a value
+		Of n = 1000 gave me 0.99991.
+	--> For doubles the answer again is 1. Any number times its reciprocal is 1 (except 0) As doubles do not have the same 				approximation rounding errors as floating points
 
 7. The numeric error occurs during the final iteration of the for loop, the for loop is executed too many times and the result is that we pass our limit of < 4.4
 	Because 0.2 doesn't fit exactly in a float and you accumulate floating point errors in your loop.
